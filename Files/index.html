@@ -49,7 +49,7 @@
           <a href="https://www.instagram.com/shrey0107.heic/"
             ><i class="bx bxl-instagram-alt"></i
           ></a>
-          
+          <!-- <a href="#"><i class="bx bxl-facebook-square"></i></a> -->
         </div>
 
         <a href="mailto:shrey0107@gmail.com" class="btn">Hire Me</a>
@@ -118,20 +118,28 @@
 
       <form action="#">
         <div class="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email" />
+          <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off" />
+          
+          <input type="email" placeholder="Email" id="email" class="item" autocomplete="off" />
+          
         </div>
         <div class="input-box">
-          <input type="number" placeholder="Phone Number" />
-          <input type="text" placeholder="Subject" />
+          <input type="number" placeholder="Phone Number" id="phone" class="item" autocomplete="off"/>
+          
+          <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off"/>
+          
         </div>
-        <textarea
+        <div class="input-box">
+          <textarea
           name=""
-          id=""
+          id="message"
           cols="30"
           rows="10"
           placeholder="Your Message"
-        ></textarea>
+          class="item" autocomplete="off"
+          ></textarea>
+        </div>
+      
         <input type="submit" value="Send Message" class="btn" />
       </form>
     </section>
@@ -170,6 +178,10 @@
       <p class="copyright">© SHREY PATEL | ALL RIGHTS RESERVED</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js
+    "></script>
   </body>
 </html>
