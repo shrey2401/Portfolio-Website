@@ -13,7 +13,6 @@
   --bg-color: rgb(17, 17, 17);
   --second-bg-color: rgb(22, 22, 22);
   --text-color: white;
-  /* --main-color: rgb(0, 174, 255); */
   --main-color: rgb(255, 149, 0);
 }
 
@@ -21,7 +20,11 @@ html {
   font-size: 65.2%;
   overflow-x: hidden;
 }
-
+.heading,.heading span{
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 body {
   background: var(--bg-color);
   color: var(--text-color);
@@ -41,12 +44,19 @@ body {
   z-index: 100;
 }
 
+.header .logo,.header a span{
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 .logo {
   font-size: 3rem;
   color: var(--text-color);
-  font-weight: 800; /* Fixed font-weight property */
+  font-weight: 800;
   cursor: pointer;
-  transition: 0.3s ease-in-out; /* Fixed transition shorthand property */
+  transition: 0.3s ease-in-out; 
 }
 
 .logo:hover {
@@ -54,11 +64,13 @@ body {
 }
 
 .navbar a {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 1.8rem;
   color: white;
   margin-left: 4rem;
-  font-weight: 500;
-  transition: 0.3s ease-in-out; /* Fixed transition shorthand property */
+  transition: 0.3s ease-in-out; 
   border-bottom: 3px solid transparent;
 }
 
@@ -95,6 +107,12 @@ section {
   margin-top: 3rem;
 }
 
+.home-content span{
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 span {
   color: var(--main-color);
 }
@@ -104,12 +122,17 @@ span {
 }
 
 .home-content h3 {
+  font-family: "Sedan", serif;
+  font-weight: 400;
+  font-style: normal;
   margin-bottom: 3rem;
   margin-top: 1rem;
   font-size: 3.5rem;
 }
 
 .home-content h1 {
+  font-family: "Sedan", serif;
+  font-style: normal;
   font-size: 7rem;
   font-weight: 700;
   margin-top: 1.5rem;
@@ -195,6 +218,10 @@ span {
 }
 
 .text-animation span {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
   position: relative;
 }
 
@@ -208,26 +235,27 @@ span {
   content: "";
   background-color: var(--bg-color);
   position: absolute;
-  width: calc(90% + 8px);
+  width: calc(100% + 10px);
   height: 100%;
   border-left: 1px solid var(--bg-color);
-  right: -8px;
+  right: -10px;
   animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 }
 
 @keyframes cursor {
-  to {
+  to { 
     border-left: 1px;
   }
 }
 
 @keyframes cursor {
   to {
-    border-left: 1px solid var(--main-color);
+    border-left: 2px solid var(--main-color);
   }
 }
 
 @keyframes words {
+
   0%,
   20% {
     content: "Web Developer";
@@ -322,12 +350,18 @@ span {
 }
 
 .about-content p {
-  font-family: "Play", sans-serif,;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: 1.9rem;
   margin: 2rem 0 3rem;
 }
 
 .about-content .text-animation span::before {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
   content: "Web Developer";
   color: var(--main-color);
   animation: words 20s infinite;
@@ -399,11 +433,17 @@ span {
   border-radius: 2rem;
 }
 .projects-card h3{
+  color: var(--main-color);
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 3rem;
 }
 .projects-card p{
-  font-family: "Rubik Mono One";
-   font-size: 1.6rem;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.6rem;
 }
 
 
@@ -493,6 +533,9 @@ span {
 }
 
 .footer ul li a {
+  font-family: "Abril Fatface", serif;
+  font-weight: 200 ;
+  font-style: normal;
   color: white;
   border-bottom: 3px solid transparent;
   transition: 0.3s ease-in-out;
