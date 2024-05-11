@@ -403,8 +403,7 @@ span {
   gap: 3rem;
   row-gap:2rem;
 }
-.projects-card{
-  height: 600px;
+.projects-card {
   max-width: 450px;
   background-color: black;
   backdrop-filter: blur(30px);
@@ -422,16 +421,18 @@ span {
   box-shadow: 0 0 5px var(--main-color);
   transition: 0.3s ease;
 }
-.projects-card:hover{
-  box-shadow: 0 0 25px var(--main-color),
-              0 0 50px var(--main-color);
+
+.projects-card:hover {
+  box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
   transform: scale(1.02);
 }
-.projects-card img{
-  max-width: 18vw;
-  object-fit: cover;
+
+.projects-card img {
+  max-width: 100%;
+  height: auto;
   border-radius: 2rem;
 }
+
 .projects-card h3{
   color: var(--main-color);
   font-family: "Righteous", sans-serif;
