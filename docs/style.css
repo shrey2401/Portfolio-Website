@@ -404,7 +404,8 @@ span {
   row-gap:2rem;
 }
 .projects-card {
-  max-width: 450px;
+  width: 450px; /* Fixed width */
+  height: 600px; /* Fixed height */
   background-color: black;
   backdrop-filter: blur(30px);
   border: 2px solid var(--main-color);
